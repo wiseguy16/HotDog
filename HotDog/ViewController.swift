@@ -9,20 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
+
     var burgerPrice = 1.75
     var superburgerPrice = 2.25
     var superburgerCount = 0
     var friesCount = 0
     var saltCount = 0
 
+    var menuItems = [String]()
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let newdog = makeHotdog(ingredienrts: 3)
         print(newdog)
+
         let burger = makeBurger(ingredients: 4)
         print(burger)
         let aFry = makeFries(salt: 2)
         print(aFry)
+
+        
+        verySmallCommitts()
+        makeMenu(items: menuItems)
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -54,7 +64,12 @@ class ViewController: UIViewController {
         let mustard = "mustard"
         print(mustard)
         let bun = "bun"
+        menuItems.append(catchup)
+        menuItems.append(mustard)
+        menuItems.append(bun)
         print(bun)
+        print(menuItems)
+
         let combo = "combo"
         print(combo)
     }
@@ -72,6 +87,14 @@ class ViewController: UIViewController {
     func makeACombo() {
         let aCombo = makeHotdog(ingredienrts: 2)
         print(aCombo)
+
+    }
+    
+    func makeMenu(items: [String]) {
+        for item in items {
+        print(item)
+        }
+
     }
 
 
