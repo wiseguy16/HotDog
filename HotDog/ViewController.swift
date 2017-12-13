@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     var superdogsMade = 0
+    var cashRegister = 0.0
     var hotdogPrice = 1.00
     var superdogPrice = 2.50
+    var menuItems = [String]()
 
     var burgerPrice = 1.75
     var superburgerPrice = 2.25
@@ -51,7 +53,11 @@ class ViewController: UIViewController {
         }
         hotdog += ingredients
         
-        
+        if ingredients > 3 {
+            cashRegister += superdogPrice
+        } else  {
+            cashRegister += hotdogPrice
+        }
         return hotdog
     }
     
