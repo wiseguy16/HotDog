@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let newdog = makeHotdog(ingredienrts: 3)
+        let newdog = makeHotdog(ingredients: 3)
         print(newdog)
 
         let burger = makeBurger(ingredients: 4)
@@ -41,9 +41,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func makeHotdog(ingredienrts: Int) -> Int {
+    func makeHotdog(ingredients: Int) -> Int {
         var hotdog = 0
-        hotdog += ingredienrts
+        hotdog += ingredients
         
         return hotdog
     }
