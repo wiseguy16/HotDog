@@ -32,6 +32,8 @@ class ViewController: UIViewController {
     func verySmallCommitts() {
         let catchup = "catchup"
         print(catchup)
+        let mustard = "mustard"
+        print(mustard)
     }
 
 
