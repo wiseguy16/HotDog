@@ -9,11 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var menuItems = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let newdog = makeHotdog(ingredienrts: 3)
         print(newdog)
+        
+        verySmallCommitts()
+        makeMenu(items: menuItems)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -35,7 +39,11 @@ class ViewController: UIViewController {
         let mustard = "mustard"
         print(mustard)
         let bun = "bun"
+        menuItems.append(catchup)
+        menuItems.append(mustard)
+        menuItems.append(bun)
         print(bun)
+        print(menuItems)
     }
     
     func makeMenu(items: [String]) {
