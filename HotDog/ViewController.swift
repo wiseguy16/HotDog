@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     var superdogsMade = 0
+    var hotdogPrice = 1.00
+    var superdogPrice = 2.50
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,7 @@ class ViewController: UIViewController {
             superdogsMade += 1
         }
         hotdog += ingredients
+        
         
         return hotdog
     }
