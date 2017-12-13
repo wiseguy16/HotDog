@@ -55,6 +55,8 @@ class ViewController: UIViewController {
         print(mustard)
         let bun = "bun"
         print(bun)
+        let combo = "combo"
+        print(combo)
     }
     
     func makeBurger(ingredients: Int) -> Int {
