@@ -52,6 +52,11 @@ class ViewController: UIViewController {
         
         return burger
     }
+    
+    func makeACombo() {
+        let aCombo = makeHotdog(ingredienrts: 2)
+        print(aCombo)
+    }
 
 
 }
