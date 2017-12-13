@@ -28,6 +28,11 @@ class ViewController: UIViewController {
         
         return hotdog
     }
+    
+    func verySmallCommitts() {
+        let catchup = "catchup"
+        print(catchup)
+    }
 
 
 }
