@@ -37,6 +37,12 @@ class ViewController: UIViewController {
         let bun = "bun"
         print(bun)
     }
+    
+    func makeMenu(items: [String]) {
+        for item in items {
+        print(item)
+        }
+    }
 
 
 }
