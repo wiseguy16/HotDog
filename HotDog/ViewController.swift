@@ -97,7 +97,7 @@ class ViewController: UIViewController {
     }
     
     func makeACombo() {
-        let aCombo = makeHotdog(ingredienrts: 2)
+        let aCombo = makeHotdog(ingredients: 2)
         print(aCombo)
 
     }
