@@ -14,16 +14,20 @@ class ViewController: UIViewController {
     var superburgerCount = 0
     var friesCount = 0
     var saltCount = 0
+
     var menuItems = [String]()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let newdog = makeHotdog(ingredienrts: 3)
         print(newdog)
+
         let burger = makeBurger(ingredients: 4)
         print(burger)
         let aFry = makeFries(salt: 2)
         print(aFry)
+
         
         verySmallCommitts()
         makeMenu(items: menuItems)
@@ -67,13 +71,6 @@ class ViewController: UIViewController {
         print(menuItems)
     }
     
-    func makeMenu(items: [String]) {
-        for item in items {
-        print(item)
-        
-            
-            
-            
     func makeBurger(ingredients: Int) -> Int {
         if ingredients > 4 {
             superburgerCount += 1
@@ -87,8 +84,16 @@ class ViewController: UIViewController {
     func makeACombo() {
         let aCombo = makeHotdog(ingredienrts: 2)
         print(aCombo)
-    }
 
+    }
+    
+    func makeMenu(items: [String]) {
+        for item in items {
+        print(item)
+        }
+    }
+        
+    
 
 }
 
