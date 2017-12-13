@@ -34,6 +34,13 @@ class ViewController: UIViewController {
         return hotdog
     }
     
+    func makeFries(salt: Int) -> Int {
+        var fries = 0
+        fries += salt
+        print(fries)
+        return fries
+    }
+    
     func verySmallCommitts() {
         let catchup = "catchup"
         print(catchup)
