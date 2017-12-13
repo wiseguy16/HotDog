@@ -21,6 +21,8 @@ class ViewController: UIViewController {
         print(newdog)
         let burger = makeBurger(ingredients: 4)
         print(burger)
+        let aFry = makeFries(salt: 2)
+        print(aFry)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
