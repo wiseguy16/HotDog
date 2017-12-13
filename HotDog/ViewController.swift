@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var cashRegister = 0.0
     var hotdogPrice = 1.00
     var superdogPrice = 2.50
+    var menuItems = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
