@@ -14,6 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let newdog = makeHotdog(ingredienrts: 3)
         print(newdog)
+        let burger = makeBurger(ingredienrts: 4)
+        print(burger)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
