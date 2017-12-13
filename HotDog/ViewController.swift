@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     var superburgerCount = 0
     var friesCount = 0
     var saltCount = 0
+    var menuItems = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,9 @@ class ViewController: UIViewController {
         print(burger)
         let aFry = makeFries(salt: 2)
         print(aFry)
+        
+        verySmallCommitts()
+        makeMenu(items: menuItems)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -60,8 +64,16 @@ class ViewController: UIViewController {
         print(bun)
         let combo = "combo"
         print(combo)
+        print(menuItems)
     }
     
+    func makeMenu(items: [String]) {
+        for item in items {
+        print(item)
+        
+            
+            
+            
     func makeBurger(ingredients: Int) -> Int {
         if ingredients > 4 {
             superburgerCount += 1
