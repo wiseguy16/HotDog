@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+
     var superdogsMade = 0
     var cashRegister = 0.0
     var hotdogPrice = 1.00
@@ -80,10 +81,10 @@ class ViewController: UIViewController {
         menuItems.append(mustard)
         menuItems.append(bun)
         print(bun)
-        print(menuItems)
-
         let combo = "combo"
         print(combo)
+        print(menuItems)
+
     }
     
     func makeBurger(ingredients: Int) -> Int {
@@ -108,7 +109,8 @@ class ViewController: UIViewController {
         }
 
     }
-
+        
+    
 
 }
 
