@@ -54,6 +54,9 @@ class ViewController: UIViewController {
         let mustard = "mustard"
         print(mustard)
         let bun = "bun"
+        menuItems.append(catchup)
+        menuItems.append(mustard)
+        menuItems.append(bun)
         print(bun)
         let combo = "combo"
         print(combo)
