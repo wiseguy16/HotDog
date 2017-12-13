@@ -37,6 +37,13 @@ class ViewController: UIViewController {
         let bun = "bun"
         print(bun)
     }
+    
+    func makeBurger(ingredienrts: Int) -> Int {
+        var burger = 0
+        burger += ingredienrts
+        
+        return burger
+    }
 
 
 }
