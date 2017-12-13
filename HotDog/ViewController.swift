@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     var superdogsMade = 0
+    var cashRegister = 0.0
     var hotdogPrice = 1.00
     var superdogPrice = 2.50
 
