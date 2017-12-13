@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var superdogsMade = 0
+    var cashRegister = 0.0
+    var hotdogPrice = 1.00
+    var superdogPrice = 2.50
+
     var burgerPrice = 1.75
     var superburgerPrice = 2.25
     var superburgerCount = 0
@@ -21,7 +26,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let newdog = makeHotdog(ingredienrts: 3)
+        let newdog = makeHotdog(ingredients: 3)
         print(newdog)
 
         let burger = makeBurger(ingredients: 4)
@@ -41,10 +46,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func makeHotdog(ingredienrts: Int) -> Int {
+    func makeHotdog(ingredients: Int) -> Int {
         var hotdog = 0
-        hotdog += ingredienrts
+        if ingredients > 3 {
+            superdogsMade += 1
+        }
+        hotdog += ingredients
         
+        if ingredients > 3 {
+            cashRegister += superdogPrice
+        } else  {
+            cashRegister += hotdogPrice
+        }
         return hotdog
     }
     
@@ -94,6 +107,7 @@ class ViewController: UIViewController {
         for item in items {
         print(item)
         }
+
     }
         
     
