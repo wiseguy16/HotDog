@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     var burgerPrice = 1.75
     var superburgerPrice = 2.25
     var superburgerCount = 0
+    var friesCount = 0
+    var saltCount = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +40,9 @@ class ViewController: UIViewController {
         var fries = 0
         fries += salt
         print(fries)
+        if salt > 2 {
+            saltCount += 1
+        }
         return fries
     }
     
