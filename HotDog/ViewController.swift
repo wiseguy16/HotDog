@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var superdogsMade = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,9 @@ class ViewController: UIViewController {
     
     func makeHotdog(ingredients: Int) -> Int {
         var hotdog = 0
+        if ingredients > 3 {
+            superdogsMade += 1
+        }
         hotdog += ingredients
         
         return hotdog
