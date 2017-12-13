@@ -52,7 +52,11 @@ class ViewController: UIViewController {
         }
         hotdog += ingredients
         
-        
+        if ingredients > 3 {
+            cashRegister += superdogPrice
+        } else  {
+            cashRegister += hotdogPrice
+        }
         return hotdog
     }
     
