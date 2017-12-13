@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var burgerPrice = 1.75
+    var superburgerPrice = 2.25
+    var superburgerCount = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +44,9 @@ class ViewController: UIViewController {
     }
     
     func makeBurger(ingredients: Int) -> Int {
+        if ingredients > 4 {
+            superburgerCount += 1
+        }
         var burger = 0
         burger += ingredients
         
