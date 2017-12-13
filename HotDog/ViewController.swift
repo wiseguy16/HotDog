@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let newdog = makeHotdog(ingredienrts: 3)
         print(newdog)
-        let burger = makeBurger(ingredienrts: 4)
+        let burger = makeBurger(ingredients: 4)
         print(burger)
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -40,9 +40,9 @@ class ViewController: UIViewController {
         print(bun)
     }
     
-    func makeBurger(ingredienrts: Int) -> Int {
+    func makeBurger(ingredients: Int) -> Int {
         var burger = 0
-        burger += ingredienrts
+        burger += ingredients
         
         return burger
     }
