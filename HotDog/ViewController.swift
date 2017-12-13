@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+
     var burgerPrice = 1.75
     var superburgerPrice = 2.25
     var superburgerCount = 0
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
         
         verySmallCommitts()
         makeMenu(items: menuItems)
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -69,6 +71,7 @@ class ViewController: UIViewController {
         let combo = "combo"
         print(combo)
         print(menuItems)
+
     }
     
     func makeBurger(ingredients: Int) -> Int {
