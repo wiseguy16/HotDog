@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var burgerPrice = 1.75
+    var superburgerPrice = 2.25
+    var superburgerCount = 0
+    var friesCount = 0
+    var saltCount = 0
 
     var superdogsMade = 0
     var cashRegister = 0.0
@@ -29,7 +34,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let newdog = makeHotdog(ingredients: 3)
         print(newdog)
-
         let burger = makeBurger(ingredients: 4)
         print(burger)
         let aFry = makeFries(salt: 2)
@@ -108,7 +112,6 @@ class ViewController: UIViewController {
         for item in items {
         print(item)
         }
-
     }
         
     
